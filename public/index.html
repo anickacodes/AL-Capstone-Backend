@@ -20,42 +20,56 @@
                 border: 1px solid;
                 border-color: green;
             }
+
             audio {
-            margin: 0 auto;
-            background-color: #f31dc18a;
-            border-radius: 17px;
-            box-shadow: 0 .04em 2em #f31dc1cd;
-        }
+                margin: 0 auto;
+                background-color: #f31dc18a;
+                border-radius: 17px;
+                box-shadow: 0 .04em 2em #f31dc1cd;
+                display: none;
+            }
 
-        audio::-webkit-media-controls-panel {
-            background-color: transparent;
-        }
+            audio::-webkit-media-controls-panel {
+                background-color: transparent;
+            }
 
-        audio::-webkit-media-controls-play-button {
-            color: #2a1717;
-        }
+            audio::-webkit-media-controls-play-button {
+                color: #2a1717;
+            }
 
-        audio::-webkit-media-controls-timeline,
-        audio::-webkit-media-controls-current-time-display,
-        audio::-webkit-media-controls-time-remaining-display,
-        audio::-webkit-media-controls-volume-slider-container {
-            display:block;
-        }
+            audio::-webkit-media-controls-timeline,
+            audio::-webkit-media-controls-current-time-display,
+            audio::-webkit-media-controls-time-remaining-display,
+            audio::-webkit-media-controls-volume-slider-container {
+                display: block;
+            }
 
             main {
                 display: flex;
                 flex-direction: column;
                 padding: 8px;
                 text-align: center;
-              
-                    h2 {
-                        font-family: 'Bagel Fat One', sans-serif;
-                    }
 
-                    img {
-                        border-radius: 4px;
-                    }
-                
+                h2 {
+                    font-family: 'Bagel Fat One', sans-serif;
+                }
+
+                img {
+                    border-radius: 4px;
+                }
+
+                img:hover {
+                    cursor: crosshair
+                }
+
+                #three {
+                    transition: filter 0.5s;
+                }
+
+                #three:hover {
+                    filter: blur(5px);
+                }
+
 
             }
 
@@ -74,18 +88,30 @@
     <main>
         <div class="home-container">
             <h2>Has this ever been your series of unfortunate events? </h2>
-            <img src="kidsheartruck.gif" height="300px" width="480px"
-                alt="homer hears the ice cream truck & runs outside" /><br/>
-            <img src="homer_run.gif" height="300px" width="480px"
-                alt="animation of homer running after ice cream truck" /><br/>
-            <img src="homercatchestruck.gif" height="300px" width="480px" alt=" homer caught up to the ice cream truck" />
+            <img src="kidsheartruck.gif" height="240px" width="411px"
+                alt="homer hears the ice cream truck & runs outside" />
+            <img src="homer_run.gif" height="240px" width="411px"
+                alt="animation of homer running after ice cream truck" />
+            <img id="three" src="homercatchestruck.gif" height="240px" width="411px"
+                alt=" homer caught up to the ice cream truck" />
         </div>
-     
+        <div class="features-container">
+<article>
+    <h4> Thaks to the developers, YOU can acces the following routes: 
+    </h4>
+    <a id="dynamic-link" href="#">Vendors</a>
+    <a id="dynamic-link" href="#">Vendors</a>
+    <a id="dynamic-link" href="#">Vendors</a>
+    <a id="dynamic-link" href="#">Vendors</a>
+
+</article>
+        </div>
     </main>
     <footer>
-      
-  
     </footer>
+    <script>
+        document.getElementById('dynamic-link').href = 'http://' + window.location.hostname + ':' + window.location.port + '/vendors';
+    </script>
 </body>
 
 </html>

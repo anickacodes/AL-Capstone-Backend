@@ -14,8 +14,9 @@ Want to test it out on your local computer?
 
 
 Things you'll need : 
-- A firebase [project](https://console.firebase.google.com/u/0/?_gl=1*1qm9t8q*_ga*MTY5NDI4NTc5MC4xNzE0Mzk5NTE2*_ga_CW55HF8NVT*MTcxNDg4MzI0MS40NC4wLjE3MTQ4ODMyNDEuNjAuMC4w) set up in your firebase console so you can get the admin keys 
+- A project set up in the [firebase console](https://console.firebase.google.com/u/0/?_gl=1*1qm9t8q*_ga*MTY5NDI4NTc5MC4xNzE0Mzk5NTE2*_ga_CW55HF8NVT*MTcxNDg4MzI0MS40NC4wLjE3MTQ4ODMyNDEuNjAuMC4w) where you'll find your admin keys 
 - A local environment
+- Passion, time, consistent commitment
 
 Just follow these steps . . .
 1. `Fork & clone` this repo 
@@ -24,7 +25,12 @@ Just follow these steps . . .
 
 4. You'll need to set up your `.env` with the following keys : 
 
+<!-- endpoints
+/vendors
 
+/customers
+
+/firebase -->
 
 <!-- - update the html instead of the 1 liner 
 - this server was built specifically for the client side application for Where's My Ice Cream
