@@ -20,18 +20,34 @@ Things you'll need :
 
 Just follow these steps . . .
 1. `Fork & clone` this repo 
+
 2. Ensure your CLI is in the directory you've cloned the repo into
+
 3. `npm install`
 
 4. You'll need to set up your `.env` with the following keys : 
+```PORT=0000
+PG_HOST=hostname
+PG_PORT=5432
+PG_DATABASE=databasename
+PG_USER=postgres
+type="accountTypeValue",
+project_id="projectidValue",
+private_key_id="projectkeyidValue",
+private_key="yourPrivateKey",
+client_email="clientemailValue",
+client_id="clinetIdValue",
+auth_uri="authuriValue",
+token_uri="tokenuriValue",
+auth_provider_x509_cert_url="authprovidercertValue",
+client_x509_cert_url="clientcertValue",
+universe_domain="universedomainValue"
+fbdatabaseURL=thisisForLine19insaveUsers.js
+```
 
-<!-- endpoints
-/vendors
+5. You can continue to explore the codebase or you can start your server
 
-/customers
-
-/firebase -->
-
+6. Enjoy & we appreciate you being here
 <!-- - update the html instead of the 1 liner 
 - this server was built specifically for the client side application for Where's My Ice Cream
 - this server side utilizes [add technologies]
