@@ -9,7 +9,7 @@ This codebase lives as the server side for [WMIC](https://github.com/anickacodes
      Axios
      Cors
 
-Want to test it out on your local computer? 
+Want to test it out on your local environment? 
 <!-- <img src="home.png" title="logo" alt="logo" width="190" height="190"/> -->
 
 
